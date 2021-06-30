@@ -9,16 +9,14 @@ app.set('view engine', 'ejs');
 
 //Middlewares
 
-//Rutas
-app.get('/', (req,res) => {
-    //const index = path.join(__dirname + '/Views/index');
-    res.render('index');
-});
+//Routes
+app.use(require('./Routes/index'));
 
 //Static files
+app.use(express.static(path.join(__dirname + '/' + 'public')));
 
 //Servidor escuchando
 app.listen(app.get('port'), () => {
-    console.log("server on port " + app.get('port'));
+   // console.log("server on port " + app.get('port'));
 });
 

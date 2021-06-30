@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera Pagina</title>
+    <title> <%= title %> </title>
+    <%- include('partials/enlaces.ejs')%>
 </head>
 <body>
-    <h1>En el HTML </h1>
+    <%- include('partials/navigation.ejs') %>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <img src="/imgs/pews-logo.png" class="animate__animated animate__bounceInDown" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION UNO-->
+    <div class="container-fluid" id="about">
+        <div class="row bg-dark text-white p-5 text-center">
+            <div class="col-sm-6">
+                <i class="fab fa-youtube fa-10x"></i>
+            </div>
+            <div class="col-sm-6">
+               <h3>Lorem ipsum dolor sit amet consectetur. </h3>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos expedita atque dolore totam suscipit blanditiis hic ipsum quaerat error cum animi, soluta at esse voluptatem adipisci rerum molestias dolorum! Accusantium.
+               Iusto impedit omnis qui voluptatibus natus odio laudantium neque repellendus? Voluptatum nihil nostrum voluptas officiis natus similique, eaque dolore sit, unde recusandae quibusdam odit quaerat. Iste labore eligendi explicabo quia.
+               Eum doloremque eaque commodi
+            </div>
+
+        </div>
+    </div>
+   
+    <%- include('partials/footer.ejs')%>
+
 </body>
 </html>
