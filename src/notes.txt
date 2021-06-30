@@ -1,0 +1,2 @@
+//Nodemon run (Para refrescar servidor en caso de cambios)
+npm run dev
